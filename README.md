@@ -13,16 +13,6 @@ high-performance deep learning workloads on Intel GPUs.
 
 ## About the Stack
 The stack consists of the following images:
-### `dockerfiles/compute-runtime/`
-
-**Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver**
-
-The Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
-
-Below is an example command that can be used to build this image:
-```shell
-docker build -t intel/compute-runtime:26.14.37833.4-devel-ubuntu24.04 -f dockerfiles/compute-runtime/26.14.37833.4-devel-ubuntu24.04.dockerfile .
-```
 ### `dockerfiles/pytorch/`
 
 **Intel(R) support for PyTorch***
@@ -32,6 +22,16 @@ The PyTorch\* Intel(R) container images are optimized for Intel(R) CPUs and Inte
 Below is an example command that can be used to build this image:
 ```shell
 docker build -t intel/pytorch:xpu-2.11.0-ubuntu24.04 -f dockerfiles/pytorch/xpu-2.11.0-ubuntu24.04.dockerfile .
+```
+### `dockerfiles/compute-runtime/`
+
+**Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver**
+
+The Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
+
+Below is an example command that can be used to build this image:
+```shell
+docker build -t intel/compute-runtime:26.14.37833.4-devel-ubuntu24.04 -f dockerfiles/compute-runtime/26.14.37833.4-devel-ubuntu24.04.dockerfile .
 ```
 ### `dockerfiles/omix/`
 
