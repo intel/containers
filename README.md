@@ -1,4 +1,4 @@
-# Intel AI Container Stack
+# AI Container Stack
 
 ## Introduction
 
