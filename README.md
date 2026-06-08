@@ -3,7 +3,7 @@
 ## Introduction
 
 This repository provides Dockerfiles and build scripts for creating container images with Intel GPU Drivers, oneAPI,
-PyTorch (with XPU support), and deep learning essentials on various Linux distributions. The stack is designed for
+PyTorch* (with XPU support), and deep learning essentials on various Linux distributions. The stack is designed for
 high-performance deep learning workloads on Intel GPUs.
 
 ## Repository Structure
@@ -15,9 +15,9 @@ high-performance deep learning workloads on Intel GPUs.
 The stack consists of the following images:
 ### `dockerfiles/compute-runtime/`
 
-**Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver**
+**Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver**
 
-The Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
+The Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
 
 Below is an example command that can be used to build this image:
 ```shell
@@ -25,9 +25,9 @@ docker build -t intel/compute-runtime:26.14.37833.4-devel-ubuntu24.04 -f dockerf
 ```
 ### `dockerfiles/pytorch/`
 
-**Intel(R) support for PyTorch***
+**Intel<sup>®</sup> support for PyTorch***
 
-The PyTorch\* Intel(R) container images are optimized for Intel(R) CPUs and Intel GPUs, providing a seamless experience for developers to build and deploy AI applications.
+The PyTorch\* container images are optimized for Intel CPUs and GPUs, providing a seamless experience for developers to build and deploy AI applications.
 
 Below is an example command that can be used to build this image:
 ```shell
@@ -35,9 +35,9 @@ docker build -t intel/pytorch:xpu-2.11.0-ubuntu24.04 -f dockerfiles/pytorch/xpu-
 ```
 ### `dockerfiles/omix/`
 
-**Open Middleware X<sup>e</sup>**
+**Intel<sup>®</sup> Open Middleware X<sup>e</sup> (Intel<sup>®</sup> OMIX)**
 
-Open Middleware X<sup>e</sup> is a set of highly optimized deep learning frameworks and tools for Intel GPUs to accelerate AI workloads.
+Intel<sup>®</sup> Open Middleware X<sup>e</sup> is a set of highly optimized deep learning frameworks and tools for Intel GPUs to accelerate AI workloads.
 
 Below is an example command that can be used to build this image:
 ```shell
@@ -102,4 +102,6 @@ This project is licensed under the terms of the MIT license. See [LICENSE](LICEN
 
 ## Notices and Disclaimers
 
-© Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. Other names and brands may be claimed as the property of others.
+© Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries.
+OpenCL and the OpenCL logo are trademarks of Apple Inc. used by permission by Khronos.
+Other names and brands may be claimed as the property of others.
