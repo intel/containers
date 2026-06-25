@@ -12,33 +12,32 @@ high-performance deep learning workloads on Intel GPUs.
 
 ## About the Stack
 The stack consists of the following images:
+### **vLLM with Intel(R) GPUs support**
+#### `dockerfiles/vllm/`
 
+vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. This configuration provides vLLM with Intel(R) GPUs support for Intel® Client GPUs and Intel® Data Center GPUs.
+
+Below is an example command that can be used to build this image:
+```shell
+docker build -t intel/vllm:0.21.0-ubuntu24.04 -f dockerfiles/vllm/0.21.0-ubuntu24.04.dockerfile .
+```
 ### **Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver**
 #### `dockerfiles/compute-runtime/`
+
 The Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
 
 Below is an example command that can be used to build this image:
 ```shell
-docker build -t intel/pytorch:xpu-2.11.0-ubuntu24.04 -f dockerfiles/pytorch/xpu-2.11.0-ubuntu24.04.dockerfile .
+docker build -t intel/compute-runtime:26.18.38308.4-devel-ubuntu24.04 -f dockerfiles/compute-runtime/26.18.38308.4-devel-ubuntu24.04.dockerfile .
 ```
-
-### **PyTorch\* on Intel<sup>®</sup> Hardware**
-#### `dockerfiles/pytorch/`
-The PyTorch\* container images are optimized for Intel<sup>®</sup> CPUs and GPUs, providing a seamless experience for developers to build and deploy AI applications.
-
-Below is an example command that can be used to build this image:
-```shell
-docker build -t intel/compute-runtime:26.14.37833.4-devel-ubuntu24.04 -f dockerfiles/compute-runtime/26.14.37833.4-devel-ubuntu24.04.dockerfile .
-```
-
-
-### **Intel<sup>®</sup> Open Middleware X<sup>e</sup> (Intel<sup>®</sup> OMIX)**
+### **Intel<sup>®</sup> Open Middleware X<sup>e</sup>**
 #### `dockerfiles/omix/`
+
 Intel<sup>®</sup> Open Middleware X<sup>e</sup> is a set of highly optimized deep learning frameworks and tools for Intel GPUs to accelerate AI workloads.
 
 Below is an example command that can be used to build this image:
 ```shell
-docker build -t intel/omix:0.1.0-devel-ubuntu24.04 -f dockerfiles/omix/0.1.0-devel-ubuntu24.04.dockerfile .
+docker build -t intel/omix:0.2.0-devel-ubuntu24.04 -f dockerfiles/omix/0.2.0-devel-ubuntu24.04.dockerfile .
 ```
 
 ## Prerequisites

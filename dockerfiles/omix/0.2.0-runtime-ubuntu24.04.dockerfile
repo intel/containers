@@ -8,7 +8,7 @@ FROM ${INTEL_REGISTRY}/compute-runtime:latest-runtime-ubuntu24.04
 # Install Open Middleware Xe runtime
 ########################################
 
-LABEL image.omix.version=0.1.0
+LABEL image.omix.version=0.2.0
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 

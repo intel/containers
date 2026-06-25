@@ -32,7 +32,7 @@ ARG REPOSITORY_URL="https://repositories.intel.com/gpu/ubuntu"
 # Have to end with a slash if REPOSITORY_VERSION is specified
 ARG REPOSITORY_NAME="intel-omix/"
 # If version is empty the latest available in the repository will be installed
-ARG REPOSITORY_VERSION="0.1.0"
+ARG REPOSITORY_VERSION=0.2.0
 
 # hadolint ignore=DL4006 # We accept these issues; they apply to Alpine and BusyBox images
 RUN . /etc/os-release \
@@ -46,6 +46,6 @@ RUN . /etc/os-release \
         tee "/etc/apt/sources.list.d/intel-gpu-${VERSION_CODENAME}.list" \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
-        intel-gpu-compute \
+        intel-gpu-compute-dev \
         clinfo \
     && rm -rf /var/lib/apt/lists/*

@@ -1,6 +1,6 @@
-# Intel<sup>®</sup> Open Middleware X<sup>e</sup> (Intel<sup>®</sup> OMIX)
+# Intel<sup>®</sup> Open Middleware X<sup>e</sup>
 
-Intel<sup>®</sup> Open Middleware X<sup>e</sup> (Intel<sup>®</sup> OMIX) is a set of highly optimized deep learning frameworks and tools for Intel GPUs to accelerate AI workloads.
+Intel<sup>®</sup> Open Middleware X<sup>e</sup> is a set of highly optimized deep learning frameworks and tools for Intel GPUs to accelerate AI workloads.
 
 # License Agreement
 

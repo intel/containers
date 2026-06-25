@@ -1,6 +1,6 @@
-# Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver
+# Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver
 
-The Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
+The Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
 
 # License Agreement
 
