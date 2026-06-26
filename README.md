@@ -21,6 +21,14 @@ Below is an example command that can be used to build this image:
 ```shell
 docker build -t intel/vllm:0.21.0-ubuntu24.04 -f dockerfiles/vllm/0.21.0-ubuntu24.04.dockerfile .
 ```
+### **PyTorch\* on Intel<sup>®</sup> Hardware**
+#### `dockerfiles/pytorch/`
+The PyTorch\* container images are optimized for Intel<sup>®</sup> CPUs and GPUs, providing a seamless experience for developers to build and deploy AI applications.
+
+Below is an example command that can be used to build this image:
+```shell
+docker build -t intel/pytorch:xpu-2.11.0-ubuntu24.04 -f dockerfiles/pytorch/xpu-2.11.0-ubuntu24.04.dockerfile .
+```
 ### **Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver**
 #### `dockerfiles/compute-runtime/`
 
