@@ -27,7 +27,7 @@ The PyTorch\* container images are optimized for Intel<sup>®</sup> CPUs and GPU
 
 Below is an example command that can be used to build this image:
 ```shell
-docker build -t intel/compute-runtime:26.14.37833.4-devel-ubuntu24.04 -f dockerfiles/compute-runtime/26.14.37833.4-devel-ubuntu24.04.dockerfile .
+docker build -t intel/pytorch:xpu-2.11.0-ubuntu24.04 -f dockerfiles/pytorch/xpu-2.11.0-ubuntu24.04.dockerfile .
 ```
 ### **Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver**
 #### `dockerfiles/compute-runtime/`
