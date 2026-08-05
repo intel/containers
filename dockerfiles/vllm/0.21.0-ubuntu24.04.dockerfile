@@ -72,10 +72,11 @@ WORKDIR /opt/vllm
 
 RUN --mount=type=cache,target=/root/.cache/pip \
     git checkout v${VLLM_VERSION} && \
-    # Apply optimization and feature patches on top of upstream vLLM 0.21.0 to improve performance.
+    # Apply security, optimization and feature patches on top of upstream vLLM 0.21.0 to improve performance.
     git clone https://github.com/intel/llm-scaler.git /tmp/llm-scaler && \
     git -C /tmp/llm-scaler checkout omix-vllm-0.21.0 && \
     git -c user.name="${GIT_USER_NAME}" -c user.email="${GIT_USER_EMAIL}" am < "/tmp/llm-scaler/vllm/patches/v21.patch" && \
+    git -c user.name="${GIT_USER_NAME}" -c user.email="${GIT_USER_EMAIL}" am < "/tmp/llm-scaler/vllm/patches/pr-43426.patch" && \
     rm -rf /tmp/llm-scaler && \
     # Install requirements
     pip install --no-cache-dir -v -r requirements/xpu.txt && \
