@@ -14,11 +14,21 @@ high-performance deep learning workloads on Intel GPUs.
 The stack consists of the following images:
 ### **PyTorch\* on Intel<sup>®</sup> Hardware**
 #### `dockerfiles/pytorch/`
+
 The PyTorch\* container images are optimized for Intel<sup>®</sup> CPUs and GPUs, providing a seamless experience for developers to build and deploy AI applications.
 
 Below is an example command that can be used to build this image:
 ```shell
-docker build -t intel/pytorch:xpu-2.11.0-ubuntu24.04 -f dockerfiles/pytorch/xpu-2.11.0-ubuntu24.04.dockerfile .
+docker build -t intel/pytorch:xpu-2.13.0-ubuntu24.04 -f dockerfiles/pytorch/xpu-2.13.0-ubuntu24.04.dockerfile .
+```
+### **Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver**
+#### `dockerfiles/compute-runtime/`
+
+The Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
+
+Below is an example command that can be used to build this image:
+```shell
+docker build -t intel/compute-runtime:26.31.39395.13-devel-ubi9 -f dockerfiles/compute-runtime/26.31.39395.13-devel-ubi9.dockerfile .
 ```
 ### **vLLM with Intel(R) GPUs support**
 #### `dockerfiles/vllm/`
@@ -29,15 +39,6 @@ Below is an example command that can be used to build this image:
 ```shell
 docker build -t intel/vllm:0.21.0-ubuntu24.04 -f dockerfiles/vllm/0.21.0-ubuntu24.04.dockerfile .
 ```
-### **Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver**
-#### `dockerfiles/compute-runtime/`
-
-The Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver is an open source project providing compute API support (Level Zero, OpenCL) for Intel graphics hardware architectures (HD Graphics, Xe).
-
-Below is an example command that can be used to build this image:
-```shell
-docker build -t intel/compute-runtime:26.22.38646.6-devel-ubuntu24.04 -f dockerfiles/compute-runtime/26.22.38646.6-devel-ubuntu24.04.dockerfile .
-```
 ### **Intel<sup>®</sup> Open Middleware X<sup>e</sup>**
 #### `dockerfiles/omix/`
 
@@ -45,7 +46,7 @@ Intel<sup>®</sup> Open Middleware X<sup>e</sup> is a set of highly optimized de
 
 Below is an example command that can be used to build this image:
 ```shell
-docker build -t intel/omix:0.3.0-devel-ubuntu24.04 -f dockerfiles/omix/0.3.0-devel-ubuntu24.04.dockerfile .
+docker build -t intel/omix:0.4.0-devel-ubi9 -f dockerfiles/omix/0.4.0-devel-ubi9.dockerfile .
 ```
 
 ## Prerequisites

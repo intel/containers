@@ -1,6 +1,6 @@
-# Intel(R) support for PyTorch*
+# PyTorch\* on Intel<sup>®</sup> Hardware
 
-The PyTorch\* Intel(R) container images are optimized for Intel(R) CPUs and Intel GPUs, providing a seamless experience for developers to build and deploy AI applications.
+The PyTorch\* container images are optimized for Intel<sup>®</sup> CPUs and GPUs, providing a seamless experience for developers to build and deploy AI applications.
 
 # License Agreement
 
