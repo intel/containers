@@ -56,35 +56,6 @@ To utilize containers with Intel GPU driver support, the host system must meet t
 - **Operating System**: A supported Linux distribution is required. Refer to [Supported Linux Kernels](https://dgpu-docs.intel.com/driver/client/overview.html#selecting-the-right-operating-system-version) for specific version details.
 - **Kernel Mode Driver (KMD)**: The system must have the appropriate KMD driver installed.
 
-### Requirements for AI Containers
-
-If you plan to use the following AI containers, the host system requires the latest kernel version to support
-the necessary drivers and specific AI features:
-- `omix`
-- `pytorch`
-
-### Installing the Intel GPU Kernel (Ubuntu)
-
-For optimal compatibility with the latest Intel GPU devices and features, install the kernel from the `intel-graphics` PPA.
-Follow the steps below for Ubuntu:
-
-1.  Update package index and install repository management tools:
-    ```bash
-    sudo apt-get update
-    sudo apt-get install -y software-properties-common
-    ```
-
-2.  Add the Intel Graphics PPA:
-    ```bash
-    sudo add-apt-repository -y ppa:kobuk-team/intel-graphics
-    ```
-
-3.  Install the Intel GPU kernel package:
-    ```bash
-    sudo apt-get update
-    sudo apt-get install -y linux-intel
-    ```
-
 ## How to provide feedback
 
 Use [GitHub Issues](/issues) for feature requests, bug reports, and minor inquiries. For broader questions and development-related discussions, use [GitHub Discussions](/discussions).
