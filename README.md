@@ -19,7 +19,7 @@ The PyTorch\* container images are optimized for Intel<sup>®</sup> CPUs and GPU
 
 Below is an example command that can be used to build this image:
 ```shell
-docker build -t intel/pytorch:xpu-2.13.0-ubuntu24.04 -f dockerfiles/pytorch/xpu-2.13.0-ubuntu24.04.dockerfile .
+docker build -t intel/pytorch:cpu-2.14.0-ubi9 -f dockerfiles/pytorch/cpu-2.14.0-ubi9.dockerfile .
 ```
 ### **Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL<sup>™</sup> Driver**
 #### `dockerfiles/compute-runtime/`
@@ -28,7 +28,7 @@ The Intel<sup>®</sup> Graphics Compute Runtime for oneAPI Level Zero and OpenCL
 
 Below is an example command that can be used to build this image:
 ```shell
-docker build -t intel/compute-runtime:26.31.39395.13-devel-ubi9 -f dockerfiles/compute-runtime/26.31.39395.13-devel-ubi9.dockerfile .
+docker build -t intel/compute-runtime:26.31.39395.16-devel-ubi9 -f dockerfiles/compute-runtime/26.31.39395.16-devel-ubi9.dockerfile .
 ```
 ### **vLLM with Intel(R) GPUs support**
 #### `dockerfiles/vllm/`
@@ -46,7 +46,7 @@ Intel<sup>®</sup> Open Middleware X<sup>e</sup> is a set of highly optimized de
 
 Below is an example command that can be used to build this image:
 ```shell
-docker build -t intel/omix:0.4.0-devel-ubi9 -f dockerfiles/omix/0.4.0-devel-ubi9.dockerfile .
+docker build -t intel/omix:0.4.1-devel-ubi9 -f dockerfiles/omix/0.4.1-devel-ubi9.dockerfile .
 ```
 
 ## Prerequisites
