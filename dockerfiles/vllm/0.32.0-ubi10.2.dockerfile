@@ -59,7 +59,7 @@ RUN --mount=type=cache,target=/root/.cargo/registry,sharing=locked \
 # GPU drivers (UMD) and XPU-Manager are provided by the intel/compute-runtime
 # base image, so the UMD/XPU-Manager install steps from upstream Dockerfile.xpu
 # are intentionally omitted here.
-FROM amr-registry.caas.intel.com/layered-containers-cache/production/compute-runtime:26.31.39395.16-runtime-ubi10 AS vllm-base
+FROM intel/compute-runtime:26.31.39395.16-runtime-ubi10 AS vllm-base
 
 WORKDIR /workspace/
 
